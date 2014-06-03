@@ -4,6 +4,10 @@
 using namespace std;
 
 void moveBlock(int n, char source, char support, char target) {
+	/*
+	base case: single block => just move it
+	relation: move(n) => move(n-1 to support), move nth to target, move(n-1 to target)
+	*/
 	static int moveNo=1;
 	if (n==1) {
 		cout<<moveNo<<". Move block from "<<source<<" to "<<target<<endl;

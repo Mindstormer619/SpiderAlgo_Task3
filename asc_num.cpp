@@ -4,6 +4,10 @@
 using namespace std;
 
 void ascending_natural(int n, int c) {
+	/*
+	Base case: c has reached n => print c
+	Relation: asc_nat(n,c) = print c, asc_nat(n,c+1)
+	*/
 	if (c==n) {
 		cout<<c<<" ";
 		return;

@@ -4,8 +4,10 @@
 using namespace std;
 
 int sum(int n) {
-	//sum n = lastdigval + sum(remainDigitnum)
-	// n%10 gives last dig val
+	/*
+	Base case: number is 0 => sum of digits is 0
+	Relation: sum(digits) = lastdigit + sum(remaining)
+	*/
 	if (n==0) {
 		return 0;
 	}

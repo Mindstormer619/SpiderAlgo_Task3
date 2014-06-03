@@ -4,7 +4,10 @@
 using namespace std;
 
 int sum (int array[], int size) {
-	//sum array = last elem + sum (array till second-last elem)
+	/*
+	Base case: 1 element to check => return same element
+	Relation: sum(array) = lastElement + sum(array till secondlast)
+	*/
 	if (size == 1) {
 		return array[size-1]; //first element, actually
 	}

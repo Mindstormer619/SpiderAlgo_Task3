@@ -4,6 +4,17 @@
 using namespace std;
 
 bool isprime(int n, int c) {
+
+	/*
+	Base: 
+		1. n is divisible by 2
+		2. n divisible by c
+		3. c passed till ceil(n/2)
+	Relation:
+		isprime(n,c) = isprime(n,c+2) till base cases reached
+	*/
+	
+	
 	/* test for div by 2
 	if yes, quit (either as 1 or 0 depending on n==2)
 	*/

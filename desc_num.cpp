@@ -4,6 +4,10 @@
 using namespace std;
 
 void descending_natural(int n) {
+	/*
+	Base: n is 1: output n
+	Relation: desc_nat(n) = print n, desc_nat(n-1)
+	*/
 	if (1==n) {
 		cout<<n<<" ";
 		return;

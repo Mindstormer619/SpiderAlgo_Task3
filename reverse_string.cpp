@@ -5,6 +5,14 @@
 using namespace std;
 
 void reverse (char a[], int sIndex, int lIndex) {
+	/*
+	Base case: startpoint after endpoint => nothing to do here
+	Relation: 
+		reverse(a) => swap start and end elements
+		increment start
+		decrement end
+		reverse(a)
+	*/
 	if (sIndex>=lIndex) return;
 	a[sIndex] ^= a[lIndex];
 	a[lIndex] ^= a[sIndex];
